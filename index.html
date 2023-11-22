@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
     <title>Nite Lite</title>
-    <script src="elm.js"></script>
+    <script src="dist/elm.js"></script>
     <script>
         var app = Elm.Main.init({
             node: document.getElementById('app')
@@ -32,7 +32,7 @@
             }
         });
 
-        await audioContext.audioWorklet.addModule("brown-noise-processor.js");
+        await audioContext.audioWorklet.addModule("./public/brown-noise-processor.js");
 
         overlay.addEventListener("click", async () => {
             await audioContext.resume();
