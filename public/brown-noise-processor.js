@@ -7,7 +7,7 @@ class BrownNoiseProcessor extends AudioWorkletProcessor {
   }
 
   process(inputs, outputs, parameters) {
-    console.log("BrownNoiseProcessor process");
+    // console.log("BrownNoiseProcessor process");
     outputs[0].forEach(output => {
       for (var i = 0; i < output.length; i++) {
         var white = Math.random() * 2 - 1;

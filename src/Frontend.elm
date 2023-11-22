@@ -39,7 +39,7 @@ init : Url.Url -> Nav.Key -> ( Model, Cmd FrontendMsg )
 init url key =
     ( { key = key
       , wakeTime = { hour = 10, minute = 0 }
-      , sleepTime = { hour = 17, minute = 26 }
+      , sleepTime = { hour = 23, minute = 0 }
       , wakeState = Waking
       , zone = Nothing
       }
